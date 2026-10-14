@@ -1,0 +1,16 @@
+id = "herdr-undo"
+name = "Undo close"
+version = "0.1.0"
+min_herdr_version = "0.9.4"
+description = "Reopen the last closed pane, tab or space: same layout, directories and labels, agent sessions resumed"
+platforms = ["macos", "linux"]
+
+# One daemon per server keeps the pre-close shadow and the undo stack.
+[[startup]]
+command = ["python3", "-B", "undo.py", "daemon", "--ensure"]
+
+[[actions]]
+id = "reopen"
+title = "Reopen the last closed pane, tab or space"
+contexts = ["global"]
+command = ["python3", "-B", "undo.py", "reopen"]
