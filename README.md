@@ -1,5 +1,7 @@
 # herdr-undo
 
+> **Moved.** This plugin now lives in [justmytwospence/herdr-plugins](https://github.com/justmytwospence/herdr-plugins/tree/main/undo) (same plugin id, history included). Install it with `herdr plugin install justmytwospence/herdr-plugins/undo --ref <commit> --yes`; this repository is archived.
+
 A Python-standard-library Herdr plugin that reopens the last closed **pane, tab or
 space**: the same split tree and ratios, directories and labels, in the same place,
 with agent sessions resumed. Repeat it to walk further back.
